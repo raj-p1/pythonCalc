@@ -1,4 +1,6 @@
 """Testing the Calculator"""
+import pytest as pytest
+
 from calculator.main import Calculator
 
 def test_calculator_result():
@@ -33,5 +35,5 @@ def test_calculator_multiply():
 def test_calculator_divide():
     """ tests division of two numbers"""
     calc = Calculator()
-    result = calc.divide_numbers(2, 2)
+    result =calc.divide_numbers(2, 2)
     assert result == 1
