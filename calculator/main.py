@@ -1,7 +1,4 @@
 """ This is the increment function"""
-import print as print
-
-
 class Calculator:
     """ This is the Calculator class"""
 
