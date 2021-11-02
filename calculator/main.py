@@ -26,4 +26,3 @@ class Calculator:
             return self.result
         except ZeroDivisionError:
             print("Error occurred due to zero division ")
-
