@@ -33,7 +33,7 @@ class Calculator:
 
     @staticmethod
     def clear_history():
-        """clear history"""
+        """clears the history"""
         Calculator.history.clear()
         return True
 
@@ -41,12 +41,6 @@ class Calculator:
     def history_count():
         """keeps history count"""
         return len(Calculator.history)
-
-    @staticmethod
-    def add_calculation_to_history(calculation):
-        """as"""
-        Calculator.history.append(calculation)
-        return True
 
     @staticmethod
     def add_number(value_a, value_b):
@@ -65,14 +59,14 @@ class Calculator:
 
     @staticmethod
     def multiply_number(value_a, value_b):
-        """ multiply two numbers and store the result"""
+        """ multiply number from result"""
         multiplication = Multiplication(value_a, value_b)
         Calculator.history.append(multiplication)
         return multiplication.getresult()
 
     @staticmethod
     def divide_number(value_a, value_b):
-        """ divide two numbers and store the result"""
+        """ divide numbers from result"""
         # this is a shorthand way to create the division object and added it the history in one line
         division = Division(value_a, value_b)
         Calculator.history.append(division)
