@@ -8,5 +8,5 @@ class Subtraction(Calculation):
         """define method"""
         total_subtraction = 0.0
         for value in self.values:
-            total_subtraction = total_subtraction - value
+            total_subtraction =  value - total_subtraction
         return total_subtraction

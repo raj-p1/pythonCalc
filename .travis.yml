@@ -11,4 +11,5 @@ branches:
   only:
     - master
     - branch-1
+    - refactor_branch
     - development
