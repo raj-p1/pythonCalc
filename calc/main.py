@@ -9,30 +9,30 @@ from calc.history.calculations import Calculations
 class Calculator:
     """ This is the Calculator class"""
     #this is the calculator static property
-    @staticmethod
-    def add_numbers(*args):
-        """ adds list of numbers"""
-        calculation = Addition(args)
-        Calculations.add_calculation(calculation)
-        return calculation.getresult()
+    def add_numbers(tuple_values: tuple):
+        """ adds a list of numbers"""
+        Calculations.add_addition_calculation(tuple_values)
+        return True
 
     @staticmethod
-    def subtract_numbers(*args):
+    def subtract_numbers(tuple_values: tuple):
         """ subtract a list of numbers from result"""
-        calculation = Subtraction(args)
-        Calculations.add_calculation(calculation)
-        return calculation.getresult()
+        Calculations.add_subtraction_calculation(tuple_values)
+        return True
 
     @staticmethod
-    def multiply_numbers(*args):
-        """ multiplication number from result"""
-        calculation = Multiplication(args)
-        Calculations.add_calculation(calculation)
-        return calculation.getresult()
+    def multiply_numbers(tuple_values: tuple):
+        """ multiplies a number with the result"""
+        Calculations.add_multiplication_calculation(tuple_values)
+        return True
 
     @staticmethod
-    def divide_numbers(*args):
-        """ dividing number from result"""
-        calculation = Division(args)
-        Calculations.add_calculation(calculation)
-        return calculation.getresult()
+    def divide_numbers(tuple_values: tuple):
+        """ Divides a number from the result"""
+        Calculations.add_division_calculation(tuple_values)
+        return True
+
+    @staticmethod
+    def get_last_result_value():
+        """ This is the gets the result of the calculation"""
+        return Calculations.get_last_calculation_result_value()

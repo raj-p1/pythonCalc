@@ -6,7 +6,5 @@ class Division(Calculation):
     def getresult(self):
         #Use self to reference the data contained in the instance of the object.is encapsulation
         """define method"""
-        total_division = 1.0
-        for value in self.values:
-            total_division =  value / total_division
-        return total_division
+        result = self.values[0] / self.values[1]
+        return result
